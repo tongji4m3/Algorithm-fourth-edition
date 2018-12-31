@@ -12,4 +12,4 @@
 ## 目录
 
 ### 第一章 基础
-[1.1 基础编程模型](https://algs4.cs.princeton.edu/code/ )  
+  [1.1 基础编程模型](https://github.com/tongji4m3/Algorithm-fourth-edition/blob/master/1.1%E5%9F%BA%E7%A1%80%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%9E%8B.md )  
