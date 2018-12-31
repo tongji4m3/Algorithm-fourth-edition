@@ -9,3 +9,7 @@
 [官方网站](https://algs4.cs.princeton.edu/code/ )  
 >在官网上ctrl+F 输入 **Exercise**即可查到官网给的答案
 
+## 目录
+
+### 第一章 基础
+[1.1 基础编程模型](https://algs4.cs.princeton.edu/code/ )  
