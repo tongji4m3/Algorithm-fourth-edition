@@ -13,6 +13,6 @@
 
 ### 第一章 基础
    > [1.1 基础编程模型](https://github.com/tongji4m3/Algorithm-fourth-edition/tree/master/1.1)  
-   >[1.2 数据抽象]( https://github.com/tongji4m3/Algorithm-fourth-edition/tree/master/1.2) 
+   >[1.2 数据抽象]( https://github.com/tongji4m3/Algorithm-fourth-edition/tree/master/1.2)   
    >[1.3 背包,队列和栈]( https://github.com/tongji4m3/Algorithm-fourth-edition/tree/master/1.3)
  
