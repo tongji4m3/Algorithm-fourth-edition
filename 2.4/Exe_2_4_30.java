@@ -1,19 +1,84 @@
 package com.tongji.algorithms_1_5;
 
-public class Exe_2_4_30
+public class Exe_2_4_30<Key extends Comparable<Key>>
 {
-  private int N = 0;
-	private int[] pq;
-	private int[] qp;
-	private Key[] keys;
+	private MaxPQ<Key> maxPQ;
+	private MinPQ<Key> minPQ;
+	private Key median;
+	private int N;
 
-	public Exe_2_4_33(int max)
+	public Exe_2_4_30()
 	{
-		keys = (Key[]) new Comparable[max + 1];
-		pq = new int[max + 1];
-		qp = new int[max + 1];
-		for (int i = 0; i <= max; i++)
-			qp[i] = -1;
+		maxPQ = new MaxPQ<>();
+		minPQ = new MinPQ<>();
+	}
+
+	public Exe_2_4_30(int capacity)
+	{
+		// 各存储一半数组(先减去中位数)
+		maxPQ = new MaxPQ<>((capacity - 1) / 2);
+		minPQ = new MinPQ<>((capacity - 1) / 2);
+	}
+
+	public Exe_2_4_30(Key[] keys)
+	{
+		maxPQ = new MaxPQ<>();
+		minPQ = new MinPQ<>();
+		if (keys.length == 0)
+		{
+			return;
+		}
+		N = keys.length;
+		median = keys[0];
+		for (int i = 1; i < keys.length; i++)
+		{
+			if (median.compareTo(keys[i]) < 0)
+				minPQ.insert(keys[i]);// 存比median大的
+			else
+				maxPQ.insert(keys[i]);
+		}
+		updateMedian();// 如果左右两堆数量差大于一就继续,直到平衡为止
+	}
+
+	public void insert(Key key)
+	{
+		if (N == 0)
+		{
+			N++;
+			median = key;
+			return;
+		}
+		if (key.compareTo(median) < 0)
+			maxPQ.insert(key);
+		else
+			minPQ.insert(key);
+		N++;
+		updateMedian();// 调整
+	}
+
+	public Key delMedian()
+	{
+		if (isEmpty())
+			throw new NoSuchElementException();
+		Key median = this.median;
+		if (N == 1)
+		{
+			N--;
+			this.median = null;
+			return median;
+		}
+		if (minPQ.size() > maxPQ.size())
+		{
+			median = minPQ.delMin();
+		} else
+			median = maxPQ.delMax();
+		N--;
+		return median;
+	}
+
+	public Key median()
+	{
+		return median;
 	}
 
 	public boolean isEmpty()
@@ -21,111 +86,17 @@ public class Exe_2_4_30
 		return N == 0;
 	}
 
-	public boolean contains(int k)
+	public void updateMedian()
 	{
-		return qp[k] != -1;
-	}
-
-	public int size()
-	{
-		return N;
-	}
-
-	public void insert(int k, Key v)
-	{
-		N++;
-		qp[k] = N;
-		pq[N] = k;
-		keys[k] = v;
-		swim(N);
-	}
-
-	public Key min()
-	{
-		return keys[pq[1]];
-	}
-
-	public void change(int k, Key v)
-	{
-		keys[k] = v;
-		swim(qp[k]);
-		sink(qp[k]);
-	}
-
-	public void delete(int k)
-	{
-		int index = qp[k];
-		exch(index, N--);
-		swim(index);
-		sink(index);
-		keys[k] = null;
-		qp[k] = -1;
-	}
-
-	public int minIndex()
-	{
-		return pq[1];
-	}
-
-	public int delMin()
-	{
-		int index = pq[1];
-		exch(1, N--);
-		sink(1);
-		keys[pq[N + 1]] = null;
-		qp[pq[N + 1]] = -1;
-		return index;
-	}
-
-	private boolean less(int i, int j)
-	{
-		return keys[pq[i]].compareTo(keys[pq[j]]) < 0;
-	}
-
-	private void exch(int i, int j)
-	{
-		Key t = keys[pq[i]];
-		keys[pq[i]] = keys[pq[j]];
-		keys[pq[j]] = t;
-	}
-
-	private void swim(int k)
-	{
-		while (k > 1 && less(k, k / 2))
+		while (maxPQ.size() - minPQ.size() > 1)
 		{
-			exch(k / 2, k);
-			k = k / 2;
+			minPQ.insert(median);
+			median = maxPQ.delMax();
 		}
-	}
-
-	private void sink(int k)
-	{
-		while (k * 2 <= N)
+		while (minPQ.size() - maxPQ.size() > 1)
 		{
-			int j = k * 2;
-			if (j < N && less(j + 1, j))
-				j++;
-			if (!less(j, k))
-				break;
-			exch(k, j);
-			k = j;
+			maxPQ.insert(median);
+			median = minPQ.delMin();
 		}
-	}
-
-	public static void main(String[] args)
-	{
-		int N = 20;
-		Exe_2_4_33<Integer> pq = new Exe_2_4_33<>(N);
-		Random random = new Random();
-		for (int i = 0; i < N; i++)
-		{
-			pq.insert(i, random.nextInt(20));
-		}
-		for (int i = 0; i < N; i++)
-		{
-			System.out.print(pq.min() + " ");
-			pq.delMin();
-		}
-		System.out.println();
 	}
 }
