@@ -1,6 +1,6 @@
 package com.tongji.algorithms_1_5;
 
-public class Exe_2_4_33
+public class Exe_2_4_33<Key extends Comparable<Key>>
 {
   private int N = 0;
 	private int[] pq;
