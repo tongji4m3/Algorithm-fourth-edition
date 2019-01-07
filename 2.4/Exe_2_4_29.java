@@ -5,16 +5,16 @@ import java.util.Random;
 
 import edu.princeton.cs.algs4.Stack;
 
-//ÕâÌâ·ÑÁË,Ã»ÓÐ½â¾ö,ÏÈÁô×Å,Ö®ºóÔÙ¿´¿´
+//è¿™é¢˜è´¹äº†,æ²¡æœ‰è§£å†³,å…ˆç•™ç€,ä¹‹åŽå†çœ‹çœ‹`
 public class Exe_2_4_29
 {
 	private int N;
 	private Node [] delMin;
 	private Node [] delMax;
-	private static int count=0;//ÎªÁËÃ¿¸ökey¶ÔÓ¦Ò»¸öË÷Òý,ÔÚNodeÖÐÊ¹ÓÃµÄ
+	private static int count=0;//ä¸ºäº†æ¯ä¸ªkeyå¯¹åº”ä¸€ä¸ªç´¢å¼•,åœ¨Nodeä¸­ä½¿ç”¨çš„
 	
-	//¹¹½¨Ò»¸ö½áµãÀà£¬ÀïÃæ´æ·ÅÓÐµ±Ç°½áµãµÄÖµ¡¢¶ÔÓ¦Êý×éÏÂ±ê
-	//ÎªÁËÉ¾³ýÊ±,Á½¸ö¶Ñ¶¼ÄÜ¼æ¹Ë
+	//æž„å»ºä¸€ä¸ªç»“ç‚¹ç±»ï¼Œé‡Œé¢å­˜æ”¾æœ‰å½“å‰ç»“ç‚¹çš„å€¼ã€å¯¹åº”æ•°ç»„ä¸‹æ ‡
+	//ä¸ºäº†åˆ é™¤æ—¶,ä¸¤ä¸ªå †éƒ½èƒ½å…¼é¡¾
 	private class Node
 	{
 		public Integer key;
@@ -114,7 +114,7 @@ public class Exe_2_4_29
 			k=k/2;
 		}
 	}
-	private void swimMin(int k)//Ê¹µÃ×îÐ¡µÄÔÚ×îÉÏÃæ,ÎªdelMinÊý×é×¼±¸µÄ
+	private void swimMin(int k)//ä½¿å¾—æœ€å°çš„åœ¨æœ€ä¸Šé¢,ä¸ºdelMinæ•°ç»„å‡†å¤‡çš„
 	{
 		while(k>1 && less(delMin, k, k/2))
 		{
