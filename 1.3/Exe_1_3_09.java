@@ -17,8 +17,8 @@ public class Exe_1_3_9
 			else if(strings[i].equals(")"))
 			{
 				String string="(";
-				String v=vals.pop();//�ұߵ�
-				String w=vals.pop();//��ߵĲ�����
+				String v=vals.pop();//ÓÒ±ßµÄ
+				String w=vals.pop();//×ó±ßµÄ²Ù×÷Êý
 				string+=w+ops.pop()+v+")";
 				vals.push(string);
 			}
