@@ -1,14 +1,10 @@
-package com.tongji.test_1_3;
+package com.tongji.algorithm.chapter1;
 
-import java.awt.event.ItemEvent;
 import java.util.Iterator;
+import java.util.NoSuchElementException;
 
-public class Exe_1_3_33_Deque<Item> implements Iterable<Item>
+public class Deque<Item> implements Iterable<Item>
 {
-	private Node first;
-	private Node last;
-	private int N;
-	
 	private class Node
 	{
 		Item item;
@@ -16,12 +12,9 @@ public class Exe_1_3_33_Deque<Item> implements Iterable<Item>
 		Node next;
 	}
 	
-	public Exe_1_3_33_Deque()
-	{
-		first=null;
-		last=null;
-		N=0;
-	}
+	private Node left;
+	private Node right;
+	private int N;
 	
 	public boolean isEmpty()
 	{
@@ -35,121 +28,142 @@ public class Exe_1_3_33_Deque<Item> implements Iterable<Item>
 	
 	public void pushLeft(Item item)
 	{
-		Node node=new Node();
-		node.item=item;
+		Node cur=new Node();
+		cur.item=item;
 		if(isEmpty())
 		{
-			first=node;
-			last=node;
-			node.prev=null;
-			node.next=null;
+			left=cur;
+			right=cur;
+			++N;
 		}
 		else
 		{
-			node.prev=null;
-			node.next=first;
-			first.prev=node;
-			first=node;
+			cur.next=left;
+			left.prev=cur;
+			left=cur;
+			++N;
 		}
-		N++;
 	}
+	
 	public void pushRight(Item item)
 	{
-		Node node=new Node();
-		node.item=item;
+		Node cur=new Node();
+		cur.item=item;
 		if(isEmpty())
 		{
-			first=node;
-			last=node;
-			node.prev=null;
-			node.next=null;
+			left=cur;
+			right=cur;
+			++N;
 		}
 		else
 		{
-			node.next=null;
-			node.prev=last;
-			last.next=node;
-			last=node;
+			right.next=cur;
+			cur.prev=right;
+			right=cur;
+			++N;
 		}
-		N++;
 	}
+	
 	public Item popLeft()
 	{
 		if(isEmpty())
-			throw new RuntimeException();
-		N--;
-		Item item=first.item;
-		if(first==last)
 		{
-			first=null;
-			last=null;
+			throw new NoSuchElementException();
 		}
-		else
+		if(size()==1)
 		{
-			first=first.next;
-			first.prev.next=null;
-			first.prev=null;
+			left=null;
+			right=null;
+			N=0;
 		}
+		
+		Item item=left.item;
+		--N;
+		
+		Node cur=left;
+		left=left.next;
+		cur.next=null;
+		left.prev=null;
+
 		return item;
 	}
+	
 	public Item popRight()
 	{
 		if(isEmpty())
-			throw new RuntimeException();
-		N--;
-		Item item=last.item;
-		if(first==last)
 		{
-			first=null;
-			last=null;
+			throw new NoSuchElementException();
 		}
-		else
+		if(size()==1)
 		{
-			last=last.prev;
-			last.next.prev=null;
-			last.next=null;
+			left=null;
+			right=null;
+			N=0;
 		}
+		
+		Item item=right.item;
+		--N;
+		
+		Node cur=right;
+		right=right.prev;
+		right.next=null;
+		cur.prev=null;
 		return item;
 	}
+	
 	public Iterator<Item> iterator()
 	{
 		return new Iterator<Item>()
 		{
-			Node current=first;
+			Node current=left;
+
+			@Override
 			public boolean hasNext()
 			{
 				return current!=null;
 			}
-			public void remove()
-			{
-				throw new UnsupportedOperationException();
-			}
+
+			@Override
 			public Item next()
 			{
 				Item item=current.item;
 				current=current.next;
 				return item;
 			}
+
+			@Override
+			public void remove()
+			{
+				throw new UnsupportedOperationException();
+			}
 		};
 	}
+	
 	public static void main(String[] args)
 	{
-		Exe_1_3_33_Deque<Integer> deque=new Exe_1_3_33_Deque<>();
-		for (int i = 0; i <5 ; i++) 
-		{
-			deque.pushLeft(i);
-		}
-		deque.pushRight(6);
-		deque.pushRight(7);
+		Deque<Integer> deque=new Deque<Integer>();
+		deque.pushLeft(1);
+		deque.pushLeft(2);
+		deque.pushRight(3);
+		deque.pushRight(4);
 		deque.popLeft();
 		deque.popRight();
+		deque.popLeft();
+		
 		for(Integer i:deque)
 		{
-			System.out.println(i);
-
+			System.out.print(i+" ");
 		}
 	}
 }
+
+
+
+
+
+
+
+
 
 
 
