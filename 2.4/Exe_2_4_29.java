@@ -5,7 +5,7 @@ import java.util.Random;
 
 import edu.princeton.cs.algs4.Stack;
 
-//这题费了,没有解决,先留着,之后再看看`
+//这题废了,没有解决,先留着,之后再看看`
 public class Exe_2_4_29
 {
 	private int N;
