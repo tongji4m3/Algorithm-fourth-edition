@@ -5,60 +5,76 @@ import edu.princeton.cs.algs4.StdRandom;
 
 public class Exe_2_3_18
 {
-	public static void sort(Comparable[] a)
+	public static void sort(Comparable [] a)
 	{
 		StdRandom.shuffle(a);
-		sort(a, 0, a.length - 1);
+		sort(a,0,a.length-1);
 	}
-
-	private static void sort(Comparable[] a, int lo, int hi)
+	
+	private static void sort(Comparable [] a,int lo,int hi)
 	{
-		if (hi <= lo)
-			return;
-		int j = partition(a, lo, hi);
-		sort(a, lo, j - 1);
-		sort(a, j + 1, hi);
-	}
-
-	private static int partition(Comparable[] a, int lo, int hi)
-	{
-		int i = lo;
-		int j = hi + 1;
-		int index = threeQuick(a, lo, hi);
-		exch(a, lo, index);
-		Comparable v = a[lo];
-		while (true)
+		if(hi<=lo)
 		{
-			while (less(a[++i], v))
-				if (i == hi)
+			return;
+		}
+		
+		int j=partition(a, lo, hi);
+		sort(a,lo,j-1);
+		sort(a, j+1, hi);
+		
+	}
+	
+	private static int partition(Comparable [] a,int lo,int hi)
+	{
+		exch(a, lo, threeQuick(a, lo, hi));
+		int i=lo,j=hi+1;
+		Comparable v=a[lo];
+		while(true)
+		{
+			while(less(a[++i], v))
+			{
+				if(i==hi)
+				{
 					break;
-			while (less(v, a[--j]))
-				if (j == lo)
+				}
+			}
+			while(less(v, a[--j]))
+			{
+				if(j==lo)
+				{
 					break;
-			if (i >= j)
+				}
+			}
+			if(i>=j)
+			{
 				break;
+			}
 			exch(a, i, j);
 		}
 		exch(a, lo, j);
 		return j;
 	}
-
-	private static int threeQuick(Comparable[] a, int lo, int hi)
+	
+	private static int threeQuick(Comparable [] a,int lo,int hi)
 	{
-		if ((hi - lo + 1) < 3)// 子数组大小小于3
-			return lo;
-		Integer[] b =
-		{ lo, lo + 1, lo + 2 };// 找前三个的中位数
-		for (int i = 1; i < 2; i++)
+		if((hi-lo+1)<3)
 		{
-			for (int j = i; j > 0 && less(a[j], a[j - 1]); j--)
-			{
-				exch(b, j, j - 1);
-			}
+			return lo;
 		}
-		return b[1];
+		if(less(a[lo], a[lo+1]) && less(a[lo+1], a[lo+2]))
+		{
+			return lo+1;
+		}
+		else if(less(a[lo+1], a[lo]) && less(a[lo], a[lo+2]))
+		{
+			return lo;
+		}
+		else
+		{
+			return lo+2;
+		}
 	}
-
+	
 	private static boolean less(Comparable v, Comparable w)
 	{
 		return v.compareTo(w) < 0;
@@ -74,8 +90,10 @@ public class Exe_2_3_18
 	private static void show(Comparable[] a)
 	{
 		for (int i = 0; i < a.length; i++)
-			StdOut.print(a[i] + " ");
-		StdOut.println();
+		{
+			System.out.print(a[i] + " ");
+		}
+		System.out.println();
 	}
 
 	public static boolean isSorted(Comparable[] a)
