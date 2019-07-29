@@ -13,8 +13,8 @@ public class Exe_2_5_2
 	{
 		String [] strings="after thought afterthought ab cd abcd a a aaa aa aa".split(" ");
 		Set<String> set=combination(strings);
-		//ÎªÁË²»´æÏàÍ¬µÄ,¾ÍÓÃÁËset
-		//±©Á¦Ëã·¨,Ã»Ïëµ½ºÃµÄ·½·¨
+		//ä¸ºäº†ä¸å­˜ç›¸åŒçš„,å°±ç”¨äº†set
+		//æš´åŠ›ç®—æ³•,æ²¡æƒ³åˆ°å¥½çš„æ–¹æ³•
 		for(String s:set)
 		{
 			System.out.print(s+" ");
