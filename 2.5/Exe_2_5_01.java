@@ -5,7 +5,7 @@ public class Exe_2_5_1
 	private String string;
 	public int compareTo(String that)
 	{
-		if(string==that) return 0;//Èç¹û×Ö·û´®ÄÚÈİÏàµÈ,¾Í²»ÓÃ±È½ÏÁË
+		if(string==that) return 0;//å¦‚æœå­—ç¬¦ä¸²å†…å®¹ç›¸ç­‰,å°±ä¸ç”¨æ¯”è¾ƒäº†
 		int n=Math.min(string.length(), that.length());
 		for (int i = 0; i <n ; i++) 
 		{
