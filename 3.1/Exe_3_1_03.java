@@ -56,14 +56,14 @@ public class Exe_3_1_3 <Key extends Comparable<Key> ,Value>
 				first.value=value;
 			return;
 		}
-		//size()起码是2
+		//size()脝冒脗毛脢脟2
 		if(first.key.compareTo(key)>0)
 		{
 			first=new Node(key, value, first);
 			N++;
 			return;
 		}
-		//一定大于first.key
+		//脪禄露篓麓贸脫脷first.key
 		for(Node x=first;x!=null;x=x.next)
 		{
 			if(x.key.compareTo(key)==0)
