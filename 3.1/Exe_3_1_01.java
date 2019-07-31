@@ -6,8 +6,8 @@ public class Exe_3_1_1
 {
 	public static void main(String[] args)
 	{
-		ST<String,Double> grades=new ST<>();
-		grades.put("A",  4.00);
+	    ST<String,Double> grades=new ST<>();
+	    grades.put("A",  4.00);
 	    grades.put("B",  3.00);
 	    grades.put("C",  2.00);
 	    grades.put("D",  1.00);
