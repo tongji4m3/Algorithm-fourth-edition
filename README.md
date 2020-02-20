@@ -17,6 +17,7 @@
    > [1.3 背包,队列和栈]( https://github.com/tongji4m3/Algorithm-fourth-edition/tree/master/1.3)  
    > [1.4 算法分析]( https://github.com/tongji4m3/Algorithm-fourth-edition/tree/master/1.4)  
    > [1.5 案例探究：union-find算法]( https://github.com/tongji4m3/Algorithm-fourth-edition/tree/master/1.5)  
+### 第二章 排序
    > [2.1 初级排序算法]( https://github.com/tongji4m3/Algorithm-fourth-edition/tree/master/2.1)  
    > [2.2 归并排序]( https://github.com/tongji4m3/Algorithm-fourth-edition/tree/master/2.2)  
    > [2.3 快速排序]( https://github.com/tongji4m3/Algorithm-fourth-edition/tree/master/2.3)  
