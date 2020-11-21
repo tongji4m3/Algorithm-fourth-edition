@@ -36,7 +36,7 @@ public class Example {
     }
 
     public void test() {
-        int N = 30000;
+        int N = 3000000;
         Integer[] a = new Integer[N];
         Random random = new Random();
         for (int i = 0; i < N; i++) {
