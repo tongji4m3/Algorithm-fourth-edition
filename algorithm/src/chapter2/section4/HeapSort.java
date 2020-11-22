@@ -23,7 +23,7 @@ public class HeapSort {
         System.arraycopy(temp,1,a,0,a.length);
         System.out.println(Arrays.toString(a));
     }
-    
+
     private static void sink(Comparable[] a, int k, int N) {
         while(2*k<=N){
             int j = 2 * k;
