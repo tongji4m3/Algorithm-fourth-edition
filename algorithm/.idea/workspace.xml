@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4705d9ce-8621-4764-8e9b-ba4f32907363" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/chapter2/section3/Quick.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chapter2/section3/Quick3way.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chapter2/section4/HeapSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chapter2/section4/MaxPQ.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chapter2/section4/TopM.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,13 +51,26 @@
       <recent name="C:\Users\12549\Desktop\algorithm\src\chapter1\section5" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Quick">
-    <configuration name="Insertion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chapter2.section1.Insertion" />
+  <component name="RunManager" selected="Application.HeapSort">
+    <configuration name="HeapSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chapter2.section4.HeapSort" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chapter2.section1.*" />
+          <option name="PATTERN" value="chapter2.section4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MaxPQ" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chapter2.section4.MaxPQ" />
+      <module name="algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chapter2.section4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,25 +104,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Selection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chapter2.section1.Selection" />
+    <configuration name="TopM" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chapter2.section4.TopM" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chapter2.section1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Shell" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chapter2.section1.Shell" />
-      <module name="algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="chapter2.section1.*" />
+          <option name="PATTERN" value="chapter2.section4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -118,11 +119,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HeapSort" />
+        <item itemvalue="Application.MaxPQ" />
+        <item itemvalue="Application.TopM" />
         <item itemvalue="Application.Quick" />
         <item itemvalue="Application.Merge" />
-        <item itemvalue="Application.Shell" />
-        <item itemvalue="Application.Insertion" />
-        <item itemvalue="Application.Selection" />
       </list>
     </recent_temporary>
   </component>
@@ -145,7 +146,8 @@
       <workItem from="1605941861058" duration="1575000" />
       <workItem from="1605943742617" duration="11000" />
       <workItem from="1605943967241" duration="1725000" />
-      <workItem from="1605959422486" duration="3962000" />
+      <workItem from="1605959422486" duration="6518000" />
+      <workItem from="1606023564687" duration="845000" />
     </task>
     <servers />
   </component>
@@ -153,34 +155,34 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="148" key="#com.intellij.ide.util.MemberChooser" timestamp="1605962472401">
+    <state x="574" y="148" key="#com.intellij.ide.util.MemberChooser" timestamp="1605964705071">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="574" y="148" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1605962472401" />
+    <state x="574" y="148" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1605964705071" />
     <state x="246" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605930274660">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="246" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.864@0.0.1536.864" timestamp="1605930274660" />
-    <state x="445" y="173" key="FileChooserDialogImpl" timestamp="1605962003138">
+    <state x="445" y="173" key="FileChooserDialogImpl" timestamp="1605965716906">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="445" y="173" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1605962003138" />
-    <state width="1493" height="364" key="GridCell.Tab.0.bottom" timestamp="1605963297343">
+    <state x="445" y="173" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1605965716906" />
+    <state width="1493" height="364" key="GridCell.Tab.0.bottom" timestamp="1606024283008">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="364" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1605963297343" />
-    <state width="1493" height="364" key="GridCell.Tab.0.center" timestamp="1605963297343">
+    <state width="1493" height="364" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1606024283008" />
+    <state width="1493" height="364" key="GridCell.Tab.0.center" timestamp="1606024283007">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="364" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1605963297343" />
-    <state width="1493" height="364" key="GridCell.Tab.0.left" timestamp="1605963297343">
+    <state width="1493" height="364" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1606024283007" />
+    <state width="1493" height="364" key="GridCell.Tab.0.left" timestamp="1606024283007">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="364" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1605963297343" />
-    <state width="1493" height="364" key="GridCell.Tab.0.right" timestamp="1605963297343">
+    <state width="1493" height="364" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1606024283007" />
+    <state width="1493" height="364" key="GridCell.Tab.0.right" timestamp="1606024283008">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="364" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1605963297343" />
+    <state width="1493" height="364" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1606024283008" />
     <state x="249" y="7" key="SettingsEditor" timestamp="1605868522103">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
