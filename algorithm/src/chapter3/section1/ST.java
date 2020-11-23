@@ -1,5 +1,7 @@
 package chapter3.section1;
 
+import chapter3.section2.BST;
+
 import java.util.Random;
 
 public class ST<Key extends Comparable<Key>, Value> {
@@ -84,7 +86,7 @@ public class ST<Key extends Comparable<Key>, Value> {
     }
 
     public static void main(String[] args) {
-        ST<String, Integer> st = new BinarySearchST<>(10);
+        BST<String, Integer> st = new BST<>();
         Random random = new Random();
         for (int i = 0; i < 10; i++) {
             char ch = (char)(random.nextInt(26) + 'A');
