@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4705d9ce-8621-4764-8e9b-ba4f32907363" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/chapter3/section3/LinearProbingHashST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chapter3/section3/SeparateChainingHashST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chapter3/section5/DeDup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chapter3/section5/LookupCSV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chapter3/section5/LookupIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chapter3/section3/LinearProbingHashST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chapter3/section4/LinearProbingHashST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chapter3/section3/SeparateChainingHashST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chapter3/section4/SeparateChainingHashST.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +54,20 @@
       <recent name="C:\Users\12549\Desktop\algorithm\src\chapter1\section5" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ST">
+  <component name="RunManager" selected="Application.DeDup">
+    <configuration name="DeDup" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chapter3.section5.DeDup" />
+      <module name="algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chapter3.section5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FrequencyCounter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="chapter3.section1.FrequencyCounter" />
       <module name="algorithm" />
@@ -91,19 +107,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaxPQ" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chapter2.section4.MaxPQ" />
-      <module name="algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="chapter2.section4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="chapter3.section1.ST" />
       <module name="algorithm" />
@@ -119,11 +122,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DeDup" />
         <item itemvalue="Application.ST" />
         <item itemvalue="Application.FrequencyCounter" />
         <item itemvalue="Application.Insertion" />
         <item itemvalue="Application.HeapSort" />
-        <item itemvalue="Application.MaxPQ" />
       </list>
     </recent_temporary>
   </component>
@@ -148,7 +151,7 @@
       <workItem from="1605943967241" duration="1725000" />
       <workItem from="1605959422486" duration="6518000" />
       <workItem from="1606023564687" duration="4365000" />
-      <workItem from="1606088623803" duration="9558000" />
+      <workItem from="1606088623803" duration="11070000" />
     </task>
     <servers />
   </component>
@@ -156,10 +159,10 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="148" key="#com.intellij.ide.util.MemberChooser" timestamp="1606097412180">
+    <state x="574" y="148" key="#com.intellij.ide.util.MemberChooser" timestamp="1606098694632">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="574" y="148" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1606097412180" />
+    <state x="574" y="148" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1606098694632" />
     <state x="246" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605930274660">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -172,22 +175,22 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="445" y="173" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1606091369884" />
-    <state width="1493" height="441" key="GridCell.Tab.0.bottom" timestamp="1606096133519">
+    <state width="1493" height="441" key="GridCell.Tab.0.bottom" timestamp="1606098431440">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="441" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1606096133519" />
-    <state width="1493" height="441" key="GridCell.Tab.0.center" timestamp="1606096133518">
+    <state width="1493" height="441" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1606098431440" />
+    <state width="1493" height="441" key="GridCell.Tab.0.center" timestamp="1606098431440">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="441" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1606096133518" />
-    <state width="1493" height="441" key="GridCell.Tab.0.left" timestamp="1606096133518">
+    <state width="1493" height="441" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1606098431440" />
+    <state width="1493" height="441" key="GridCell.Tab.0.left" timestamp="1606098431440">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="441" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1606096133518" />
-    <state width="1493" height="441" key="GridCell.Tab.0.right" timestamp="1606096133518">
+    <state width="1493" height="441" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1606098431440" />
+    <state width="1493" height="441" key="GridCell.Tab.0.right" timestamp="1606098431440">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="441" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1606096133518" />
+    <state width="1493" height="441" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1606098431440" />
     <state width="1493" height="277" key="GridCell.Tab.1.bottom" timestamp="1606096102964">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

@@ -1,4 +1,4 @@
-package chapter3.section3;
+package chapter3.section4;
 
 import chapter3.section1.SequentialSearchST;
 
@@ -14,6 +14,10 @@ public class SeparateChainingHashST<Key extends Comparable<Key>,Value> {
         for (int i = 0; i < M; i++) {
             st[i] = new SequentialSearchST<>();
         }
+    }
+
+    public SeparateChainingHashST() {
+        this(997);
     }
 
     private int hash(Key key){

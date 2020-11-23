@@ -1,4 +1,4 @@
-package chapter3.section3;
+package chapter3.section4;
 
 public class LinearProbingHashST<Key, Value> {
     private int N;
