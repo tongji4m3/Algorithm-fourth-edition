@@ -45,6 +45,19 @@ public class Queue<Item> implements Iterable<Item> {
 
     @Override
     public Iterator<Item> iterator() {
-        return null;
+        return new Iterator<Item>() {
+            Node temp=first;
+            @Override
+            public boolean hasNext() {
+                return first!=null;
+            }
+
+            @Override
+            public Item next() {
+                Item item = first.item;
+                first = first.next;
+                return item;
+            }
+        };
     }
 }

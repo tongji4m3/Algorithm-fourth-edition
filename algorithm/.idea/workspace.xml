@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4705d9ce-8621-4764-8e9b-ba4f32907363" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/chapter2/section5/Insertion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chapter2/section5/SortUse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chapter2/section5/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chapter2/section4/HeapSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chapter2/section4/HeapSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chapter3/section1/BinarySearchST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chapter3/section1/FrequencyCounter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chapter3/section1/ST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chapter3/section1/SequentialSearchST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chapter1/section3/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chapter1/section3/Queue.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +42,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -52,7 +54,20 @@
       <recent name="C:\Users\12549\Desktop\algorithm\src\chapter1\section5" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Insertion">
+  <component name="RunManager" selected="Application.ST">
+    <configuration name="FrequencyCounter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chapter3.section1.FrequencyCounter" />
+      <module name="algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chapter3.section1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HeapSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="chapter2.section4.HeapSort" />
       <module name="algorithm" />
@@ -92,25 +107,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Quick" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chapter2.section3.Quick" />
+    <configuration name="ST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chapter3.section1.ST" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chapter2.section3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TopM" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chapter2.section4.TopM" />
-      <module name="algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="chapter2.section4.*" />
+          <option name="PATTERN" value="chapter3.section1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -120,11 +122,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ST" />
+        <item itemvalue="Application.FrequencyCounter" />
         <item itemvalue="Application.Insertion" />
         <item itemvalue="Application.HeapSort" />
         <item itemvalue="Application.MaxPQ" />
-        <item itemvalue="Application.TopM" />
-        <item itemvalue="Application.Quick" />
       </list>
     </recent_temporary>
   </component>
@@ -148,7 +150,8 @@
       <workItem from="1605943742617" duration="11000" />
       <workItem from="1605943967241" duration="1725000" />
       <workItem from="1605959422486" duration="6518000" />
-      <workItem from="1606023564687" duration="2671000" />
+      <workItem from="1606023564687" duration="4365000" />
+      <workItem from="1606088623803" duration="2424000" />
     </task>
     <servers />
   </component>
@@ -156,10 +159,10 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="148" key="#com.intellij.ide.util.MemberChooser" timestamp="1606025033296">
+    <state x="574" y="148" key="#com.intellij.ide.util.MemberChooser" timestamp="1606090422631">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="574" y="148" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1606025033296" />
+    <state x="574" y="148" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1606090422631" />
     <state x="246" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605930274660">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -168,22 +171,38 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="445" y="173" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1605965716906" />
-    <state width="1493" height="364" key="GridCell.Tab.0.bottom" timestamp="1606025206560">
+    <state width="1493" height="277" key="GridCell.Tab.0.bottom" timestamp="1606090986907">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="364" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1606025206560" />
-    <state width="1493" height="364" key="GridCell.Tab.0.center" timestamp="1606025206560">
+    <state width="1493" height="277" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1606090986907" />
+    <state width="1493" height="277" key="GridCell.Tab.0.center" timestamp="1606090986907">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="364" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1606025206560" />
-    <state width="1493" height="364" key="GridCell.Tab.0.left" timestamp="1606025206560">
+    <state width="1493" height="277" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1606090986907" />
+    <state width="1493" height="277" key="GridCell.Tab.0.left" timestamp="1606090986907">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="364" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1606025206560" />
-    <state width="1493" height="364" key="GridCell.Tab.0.right" timestamp="1606025206560">
+    <state width="1493" height="277" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1606090986907" />
+    <state width="1493" height="277" key="GridCell.Tab.0.right" timestamp="1606090986907">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="364" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1606025206560" />
+    <state width="1493" height="277" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1606090986907" />
+    <state width="1493" height="277" key="GridCell.Tab.1.bottom" timestamp="1606090986908">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="277" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1606090986908" />
+    <state width="1493" height="277" key="GridCell.Tab.1.center" timestamp="1606090986908">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="277" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1606090986908" />
+    <state width="1493" height="277" key="GridCell.Tab.1.left" timestamp="1606090986908">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="277" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1606090986908" />
+    <state width="1493" height="277" key="GridCell.Tab.1.right" timestamp="1606090986908">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="277" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1606090986908" />
     <state x="249" y="7" key="SettingsEditor" timestamp="1605868522103">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -192,5 +211,21 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1605874242625" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/chapter3/section1/FrequencyCounter.java</url>
+          <line>5</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/chapter3/section1/FrequencyCounter.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
