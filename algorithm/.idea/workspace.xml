@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4705d9ce-8621-4764-8e9b-ba4f32907363" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/chapter3/section3/RedBlackBST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chapter3/section5/SparseVector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chapter3/section5/LookupIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chapter3/section5/LookupIndex.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +48,7 @@
       <recent name="chapter1.section4" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\12549\Desktop\Algorithm-fourth-edition\algorithm\src\chapter3\section3" />
       <recent name="C:\Users\12549\Desktop\algorithm\src\chapter1\section5" />
     </key>
   </component>
@@ -148,7 +150,7 @@
       <workItem from="1605959422486" duration="6518000" />
       <workItem from="1606023564687" duration="4365000" />
       <workItem from="1606088623803" duration="11301000" />
-      <workItem from="1606119621128" duration="3545000" />
+      <workItem from="1606119621128" duration="4373000" />
     </task>
     <servers />
   </component>
@@ -156,10 +158,10 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="148" key="#com.intellij.ide.util.MemberChooser" timestamp="1606120328104">
+    <state x="574" y="148" key="#com.intellij.ide.util.MemberChooser" timestamp="1606124353591">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="574" y="148" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1606120328104" />
+    <state x="574" y="148" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1606124353591" />
     <state x="246" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605930274660">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
