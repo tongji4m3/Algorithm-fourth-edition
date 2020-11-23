@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4705d9ce-8621-4764-8e9b-ba4f32907363" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/chapter3/section2/BST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/chapter3/section1/FrequencyCounter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/chapter3/section1/FrequencyCounter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/chapter3/section1/ST.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/chapter3/section1/ST.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chapter3/section1/FrequencyCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chapter3/section1/FrequencyCounter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chapter3/section1/ST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chapter3/section1/ST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chapter3/section3/LinearProbingHashST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chapter3/section3/SeparateChainingHashST.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +148,7 @@
       <workItem from="1605943967241" duration="1725000" />
       <workItem from="1605959422486" duration="6518000" />
       <workItem from="1606023564687" duration="4365000" />
-      <workItem from="1606088623803" duration="7560000" />
+      <workItem from="1606088623803" duration="9558000" />
     </task>
     <servers />
   </component>
@@ -159,10 +156,10 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="148" key="#com.intellij.ide.util.MemberChooser" timestamp="1606091809043">
+    <state x="574" y="148" key="#com.intellij.ide.util.MemberChooser" timestamp="1606097412180">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="574" y="148" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1606091809043" />
+    <state x="574" y="148" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1606097412180" />
     <state x="246" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605930274660">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
