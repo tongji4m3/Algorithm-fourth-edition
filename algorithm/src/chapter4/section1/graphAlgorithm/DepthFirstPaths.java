@@ -1,5 +1,7 @@
 package chapter4.section1.graphAlgorithm;
 
+import chapter1.section3.ResizingArrayStack;
+import chapter1.section3.Stack;
 import chapter4.section1.Graph;
 
 public class DepthFirstPaths {
@@ -23,14 +25,41 @@ public class DepthFirstPaths {
             }
         }
     }
-    //todo
-    
+    public boolean hasPathTo(int v){
+        return marked[v];
+    }
+
+    public Iterable<Integer> pathTo(int v){
+        if(!hasPathTo(v)) return null;
+        ResizingArrayStack<Integer> path = new ResizingArrayStack<>();
+        for (int x = v; x != s; x=edgeTo[x]) {
+            path.push(x);
+        }
+        path.push(s);
+        return path;
+    }
 
     public static void main(String[] args) {
-        Graph graph = new Graph(10);
+        Graph graph = new Graph(6);
+        graph.addEdge(0,5);
+        graph.addEdge(2,4);
+        graph.addEdge(2,3);
+        graph.addEdge(1,2);
+        graph.addEdge(0,1);
+        graph.addEdge(3,4);
+        graph.addEdge(3,5);
+        graph.addEdge(0,2);
         int s = 0;
+        DepthFirstPaths paths = new DepthFirstPaths(graph, s);
         for (int v = 0; v < graph.V(); v++) {
-
+            System.out.println(s + " to " + v + ":");
+            if(paths.hasPathTo(v)){
+                for (int x : paths.pathTo(v)) {
+                    if(x==s) System.out.print("\t"+x);
+                    else System.out.print("-"+x);
+                }
+                System.out.println();
+            }
         }
     }
 }

@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4705d9ce-8621-4764-8e9b-ba4f32907363" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/chapter4/section1/Graph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chapter4/section1/graphAlgorithm/CommonAlgorithm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chapter4/section1/graphAlgorithm/DepthFirstPaths.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chapter4/section1/graphAlgorithm/DepthFirstSearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chapter4/section1/graphAlgorithm/TestSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chapter4/section1/graphAlgorithm/BreadthFirstPaths.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chapter4/section1/graphAlgorithm/CC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chapter4/section1/graphAlgorithm/Cycle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chapter4/section1/graphAlgorithm/TwoColor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chapter4/section1/graphAlgorithm/DepthFirstPaths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chapter4/section1/graphAlgorithm/DepthFirstPaths.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +38,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../设计模式/Design_Pattern" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../boying" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -55,7 +55,7 @@
       <recent name="C:\Users\12549\Desktop\algorithm\src\chapter1\section5" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DeDup">
+  <component name="RunManager" selected="Application.DepthFirstPaths">
     <configuration name="DeDup" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="chapter3.section5.DeDup" />
       <module name="algorithm" />
@@ -69,12 +69,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FrequencyCounter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chapter3.section1.FrequencyCounter" />
+    <configuration name="DepthFirstPaths" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chapter4.section1.graphAlgorithm.DepthFirstPaths" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chapter3.section1.*" />
+          <option name="PATTERN" value="chapter4.section1.graphAlgorithm.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -82,12 +82,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HeapSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chapter2.section4.HeapSort" />
+    <configuration name="FrequencyCounter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chapter3.section1.FrequencyCounter" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chapter2.section4.*" />
+          <option name="PATTERN" value="chapter3.section1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,11 +123,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DepthFirstPaths" />
         <item itemvalue="Application.DeDup" />
         <item itemvalue="Application.ST" />
         <item itemvalue="Application.FrequencyCounter" />
         <item itemvalue="Application.Insertion" />
-        <item itemvalue="Application.HeapSort" />
       </list>
     </recent_temporary>
   </component>
@@ -153,7 +153,8 @@
       <workItem from="1605959422486" duration="6518000" />
       <workItem from="1606023564687" duration="4365000" />
       <workItem from="1606088623803" duration="11301000" />
-      <workItem from="1606119621128" duration="6442000" />
+      <workItem from="1606119621128" duration="6651000" />
+      <workItem from="1606175347709" duration="2238000" />
     </task>
     <servers />
   </component>
@@ -161,10 +162,10 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="148" key="#com.intellij.ide.util.MemberChooser" timestamp="1606125853731">
+    <state x="574" y="148" key="#com.intellij.ide.util.MemberChooser" timestamp="1606176178216">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="574" y="148" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1606125853731" />
+    <state x="574" y="148" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1606176178216" />
     <state x="246" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605930274660">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -173,42 +174,42 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="420" height="466" key="DebuggerActiveHint/0.0.1536.864@0.0.1536.864" timestamp="1606096117376" />
-    <state x="445" y="173" key="FileChooserDialogImpl" timestamp="1606091369884">
+    <state x="445" y="173" key="FileChooserDialogImpl" timestamp="1606131122723">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="445" y="173" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1606091369884" />
-    <state width="1493" height="277" key="GridCell.Tab.0.bottom" timestamp="1606103063792">
+    <state x="445" y="173" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1606131122723" />
+    <state width="1493" height="441" key="GridCell.Tab.0.bottom" timestamp="1606176094659">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="277" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1606103063792" />
-    <state width="1493" height="277" key="GridCell.Tab.0.center" timestamp="1606103063792">
+    <state width="1493" height="441" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1606176094659" />
+    <state width="1493" height="441" key="GridCell.Tab.0.center" timestamp="1606176094659">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="277" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1606103063792" />
-    <state width="1493" height="277" key="GridCell.Tab.0.left" timestamp="1606103063792">
+    <state width="1493" height="441" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1606176094659" />
+    <state width="1493" height="441" key="GridCell.Tab.0.left" timestamp="1606176094659">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="277" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1606103063792" />
-    <state width="1493" height="277" key="GridCell.Tab.0.right" timestamp="1606103063792">
+    <state width="1493" height="441" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1606176094659" />
+    <state width="1493" height="441" key="GridCell.Tab.0.right" timestamp="1606176094659">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="277" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1606103063792" />
-    <state width="1493" height="277" key="GridCell.Tab.1.bottom" timestamp="1606103063793">
+    <state width="1493" height="441" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1606176094659" />
+    <state width="1493" height="277" key="GridCell.Tab.1.bottom" timestamp="1606176005557">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="277" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1606103063793" />
-    <state width="1493" height="277" key="GridCell.Tab.1.center" timestamp="1606103063793">
+    <state width="1493" height="277" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1606176005557" />
+    <state width="1493" height="277" key="GridCell.Tab.1.center" timestamp="1606176005556">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="277" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1606103063793" />
-    <state width="1493" height="277" key="GridCell.Tab.1.left" timestamp="1606103063792">
+    <state width="1493" height="277" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1606176005556" />
+    <state width="1493" height="277" key="GridCell.Tab.1.left" timestamp="1606176005555">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="277" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1606103063792" />
-    <state width="1493" height="277" key="GridCell.Tab.1.right" timestamp="1606103063793">
+    <state width="1493" height="277" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1606176005555" />
+    <state width="1493" height="277" key="GridCell.Tab.1.right" timestamp="1606176005556">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="277" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1606103063793" />
+    <state width="1493" height="277" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1606176005556" />
     <state x="249" y="7" key="SettingsEditor" timestamp="1605868522103">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
