@@ -1,7 +1,6 @@
 package chapter4.section2.graphAlgorithm;
 
 import chapter1.section3.Bag;
-import chapter4.section1.Graph;
 import chapter4.section2.Digraph;
 
 public class DirectedDFS {
@@ -16,6 +15,12 @@ public class DirectedDFS {
         }
     }
 
+    public DirectedDFS(Digraph graph, int s) {
+        marked = new boolean[graph.V()];
+        dfs(graph, s);
+    }
+
+
     private void dfs(Digraph graph, int v) {
         marked[v] = true;
         for (int w : graph.adj(v)) {
@@ -25,7 +30,7 @@ public class DirectedDFS {
         }
     }
 
-    public boolean marked(int v){
+    public boolean marked(int v) {
         return marked[v];
     }
 
@@ -34,8 +39,8 @@ public class DirectedDFS {
         Bag<Integer> sources = new Bag<>();
         DirectedDFS directedDFS = new DirectedDFS(digraph, sources);
         for (int v = 0; v < digraph.V(); v++) {
-            if(directedDFS.marked(v)){
-                System.out.printf(v+" ");
+            if (directedDFS.marked(v)) {
+                System.out.printf(v + " ");
             }
         }
     }
