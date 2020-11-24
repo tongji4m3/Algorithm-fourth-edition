@@ -7,7 +7,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="" scope="RUNTIME">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/../面试/资料/算法4/algs4.jar!/" />
@@ -18,7 +18,7 @@
         </SOURCES>
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="" scope="RUNTIME">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/../面试/资料/算法4/stdlib.jar!/" />
@@ -27,6 +27,19 @@
         <SOURCES>
           <root url="jar://$MODULE_DIR$/../面试/资料/算法4/stdlib.jar!/" />
         </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="file://D:/JAVA/JAVA/讲义+笔记+资料/5.JAVA笔记/JAVASE/算法4" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://D:/JAVA/JAVA/讲义+笔记+资料/5.JAVA笔记/JAVASE/算法4" />
+        </SOURCES>
+        <jarDirectory url="file://D:/JAVA/JAVA/讲义+笔记+资料/5.JAVA笔记/JAVASE/算法4" recursive="false" />
+        <jarDirectory url="file://D:/JAVA/JAVA/讲义+笔记+资料/5.JAVA笔记/JAVASE/算法4" recursive="false" type="SOURCES" />
       </library>
     </orderEntry>
   </component>
