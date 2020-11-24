@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4705d9ce-8621-4764-8e9b-ba4f32907363" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/chapter4/section1/graphAlgorithm/BreadthFirstPaths.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chapter4/section1/graphAlgorithm/CC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chapter4/section1/graphAlgorithm/Cycle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chapter4/section1/graphAlgorithm/TwoColor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chapter4/section1/graphAlgorithm/DepthFirstPaths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chapter4/section1/graphAlgorithm/DepthFirstPaths.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chapter4/section1/graphAlgorithm/DegreesOfSeparation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chapter4/section1/graphAlgorithm/SymbolGraph.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +151,7 @@
       <workItem from="1606023564687" duration="4365000" />
       <workItem from="1606088623803" duration="11301000" />
       <workItem from="1606119621128" duration="6651000" />
-      <workItem from="1606175347709" duration="2238000" />
+      <workItem from="1606175347709" duration="3246000" />
     </task>
     <servers />
   </component>
