@@ -43,6 +43,19 @@ public class Stack<Item> implements Iterable<Item> {
 
     @Override
     public Iterator<Item> iterator() {
-        return null;
+        Node temp = first;
+        return new Iterator<Item>() {
+            @Override
+            public boolean hasNext() {
+                return first!=null;
+            }
+
+            @Override
+            public Item next() {
+                Item item = first.item;
+                first = first.next;
+                return item;
+            }
+        };
     }
 }

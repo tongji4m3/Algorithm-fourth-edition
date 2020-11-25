@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4705d9ce-8621-4764-8e9b-ba4f32907363" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/chapter4/section3/graphAlgorithm/IndexMinPQ.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chapter4/section3/graphAlgorithm/KruskalMST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/META-INF/algorithm.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chapter4/section3/EdgeWeightedGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chapter4/section3/EdgeWeightedGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chapter4/section3/graphAlgorithm/MinPQ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chapter4/section3/graphAlgorithm/MinPQ.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chapter4/section3/graphAlgorithm/PrimMST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chapter4/section3/graphAlgorithm/PrimMST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chapter4/section4/DijkstraAllPairsSP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chapter4/section4/DijkstraSP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chapter4/section4/DirectedEdge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chapter4/section4/EdgeWeightedDigraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chapter1/section3/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chapter1/section3/Stack.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +56,7 @@
       <recent name="C:\Users\12549\Desktop\algorithm\src\chapter1\section5" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.KruskalMST">
+  <component name="RunManager" selected="Application.DijkstraSP">
     <configuration name="DeDup" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="chapter3.section5.DeDup" />
       <module name="algorithm" />
@@ -84,12 +83,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FrequencyCounter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chapter3.section1.FrequencyCounter" />
+    <configuration name="DijkstraSP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chapter4.section4.DijkstraSP" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chapter3.section1.*" />
+          <option name="PATTERN" value="chapter4.section4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -125,11 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DijkstraSP" />
         <item itemvalue="Application.KruskalMST" />
         <item itemvalue="Application.DepthFirstPaths" />
         <item itemvalue="Application.DeDup" />
         <item itemvalue="Application.ST" />
-        <item itemvalue="Application.FrequencyCounter" />
       </list>
     </recent_temporary>
   </component>
@@ -159,7 +158,8 @@
       <workItem from="1606175347709" duration="6172000" />
       <workItem from="1606202593836" duration="713000" />
       <workItem from="1606213983480" duration="4714000" />
-      <workItem from="1606293251660" duration="1198000" />
+      <workItem from="1606293251660" duration="1259000" />
+      <workItem from="1606294541828" duration="2332000" />
     </task>
     <servers />
   </component>
@@ -167,10 +167,10 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="148" key="#com.intellij.ide.util.MemberChooser" timestamp="1606214866155">
+    <state x="574" y="148" key="#com.intellij.ide.util.MemberChooser" timestamp="1606294970114">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="574" y="148" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1606214866155" />
+    <state x="574" y="148" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1606294970114" />
     <state x="599" y="143" width="557" height="577" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1606215231552">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -191,22 +191,22 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="445" y="173" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1606215223919" />
-    <state width="1493" height="441" key="GridCell.Tab.0.bottom" timestamp="1606293936354">
+    <state width="1493" height="382" key="GridCell.Tab.0.bottom" timestamp="1606296709893">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="441" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1606293936354" />
-    <state width="1493" height="441" key="GridCell.Tab.0.center" timestamp="1606293936354">
+    <state width="1493" height="382" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1606296709893" />
+    <state width="1493" height="382" key="GridCell.Tab.0.center" timestamp="1606296709893">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="441" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1606293936354" />
-    <state width="1493" height="441" key="GridCell.Tab.0.left" timestamp="1606293936353">
+    <state width="1493" height="382" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1606296709893" />
+    <state width="1493" height="382" key="GridCell.Tab.0.left" timestamp="1606296709893">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="441" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1606293936353" />
-    <state width="1493" height="441" key="GridCell.Tab.0.right" timestamp="1606293936354">
+    <state width="1493" height="382" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1606296709893" />
+    <state width="1493" height="382" key="GridCell.Tab.0.right" timestamp="1606296709893">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="441" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1606293936354" />
+    <state width="1493" height="382" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1606296709893" />
     <state width="1493" height="277" key="GridCell.Tab.1.bottom" timestamp="1606181734279">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -223,10 +223,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1493" height="277" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1606181734279" />
-    <state x="249" y="7" key="SettingsEditor" timestamp="1606215238959">
+    <state x="249" y="7" key="SettingsEditor" timestamp="1606294554401">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="249" y="7" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1606215238959" />
+    <state x="249" y="7" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1606294554401" />
     <state x="93" y="93" width="1350" height="678" key="dock-window-1" timestamp="1606181734528">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
