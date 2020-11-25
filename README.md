@@ -1,11 +1,16 @@
 # 算法(第四版)
 
 >算法第四版课后习题答案
->一起探讨:微信**15316162191**
+>		一起探讨:微信**15316162191**
+>
+>jar文件夹下给出书上要求的两个jar包
+>
+>algorithm文件夹为书上各个算法的练习
 
 
 
-[官方网站](https://algs4.cs.princeton.edu/code/ )  
+**[官方网站](https://algs4.cs.princeton.edu/code/ )  **
+
 >在官网上ctrl+F 输入 **Exercise**即可查到官网给的答案
 
 ## 目录
@@ -22,4 +27,6 @@
    > [2.3 快速排序]( https://github.com/tongji4m3/Algorithm-fourth-edition/tree/master/2.3)  
    > [2.4 优先队列]( https://github.com/tongji4m3/Algorithm-fourth-edition/tree/master/2.4)  
    > [2.5 应用]( https://github.com/tongji4m3/Algorithm-fourth-edition/tree/master/2.5)  
- 
+
+
+
