@@ -35,4 +35,15 @@ public class EdgeWeightedGraph {
     public Iterable<Edge> adj(int v) {
         return adj[v];
     }
+
+    public Iterable<Edge> edges(){
+        Bag<Edge> bag = new Bag<>();
+        for (int v = 0; v < V; v++) {
+            for(Edge e:adj[v]){
+                //两条边只会添加一条,如0-1,1-0,只会添加0-1
+                if(e.other(v)>v) bag.add(e);
+            }
+        }
+        return bag;
+    }
 }
