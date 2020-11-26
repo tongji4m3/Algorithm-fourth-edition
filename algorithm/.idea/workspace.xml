@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4705d9ce-8621-4764-8e9b-ba4f32907363" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/chapter5/section1/LSD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chapter5/section1/MSD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chapter5/section1/Quick3string.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chapter2/section5/Insertion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chapter2/section5/Insertion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chapter5/section2/TST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chapter5/section2/TrieST.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +52,7 @@
       <recent name="C:\Users\12549\Desktop\algorithm\src\chapter1\section5" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DijkstraSP">
+  <component name="RunManager" selected="Application.TrieST">
     <configuration name="DeDup" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="chapter3.section5.DeDup" />
       <module name="algorithm" />
@@ -107,12 +105,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chapter3.section1.ST" />
+    <configuration name="TrieST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chapter5.section2.TrieST" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chapter3.section1.*" />
+          <option name="PATTERN" value="chapter5.section2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,11 +120,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TrieST" />
         <item itemvalue="Application.DijkstraSP" />
         <item itemvalue="Application.KruskalMST" />
         <item itemvalue="Application.DepthFirstPaths" />
         <item itemvalue="Application.DeDup" />
-        <item itemvalue="Application.ST" />
       </list>
     </recent_temporary>
   </component>
@@ -157,7 +155,8 @@
       <workItem from="1606202593836" duration="713000" />
       <workItem from="1606213983480" duration="4714000" />
       <workItem from="1606293251660" duration="1259000" />
-      <workItem from="1606294541828" duration="5018000" />
+      <workItem from="1606294541828" duration="5227000" />
+      <workItem from="1606350863048" duration="2554000" />
     </task>
     <servers />
   </component>
@@ -189,38 +188,38 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="445" y="173" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1606215223919" />
-    <state width="1493" height="382" key="GridCell.Tab.0.bottom" timestamp="1606296912355">
+    <state width="1493" height="277" key="GridCell.Tab.0.bottom" timestamp="1606352374287">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="382" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1606296912355" />
-    <state width="1493" height="382" key="GridCell.Tab.0.center" timestamp="1606296912355">
+    <state width="1493" height="277" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1606352374287" />
+    <state width="1493" height="277" key="GridCell.Tab.0.center" timestamp="1606352374287">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="382" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1606296912355" />
-    <state width="1493" height="382" key="GridCell.Tab.0.left" timestamp="1606296912355">
+    <state width="1493" height="277" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1606352374287" />
+    <state width="1493" height="277" key="GridCell.Tab.0.left" timestamp="1606352374287">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="382" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1606296912355" />
-    <state width="1493" height="382" key="GridCell.Tab.0.right" timestamp="1606296912355">
+    <state width="1493" height="277" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1606352374287" />
+    <state width="1493" height="277" key="GridCell.Tab.0.right" timestamp="1606352374287">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="382" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1606296912355" />
-    <state width="1493" height="277" key="GridCell.Tab.1.bottom" timestamp="1606181734279">
+    <state width="1493" height="277" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1606352374287" />
+    <state width="1493" height="277" key="GridCell.Tab.1.bottom" timestamp="1606352374287">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="277" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1606181734279" />
-    <state width="1493" height="277" key="GridCell.Tab.1.center" timestamp="1606181734279">
+    <state width="1493" height="277" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1606352374287" />
+    <state width="1493" height="277" key="GridCell.Tab.1.center" timestamp="1606352374287">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="277" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1606181734279" />
-    <state width="1493" height="277" key="GridCell.Tab.1.left" timestamp="1606181734279">
+    <state width="1493" height="277" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1606352374287" />
+    <state width="1493" height="277" key="GridCell.Tab.1.left" timestamp="1606352374287">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="277" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1606181734279" />
-    <state width="1493" height="277" key="GridCell.Tab.1.right" timestamp="1606181734279">
+    <state width="1493" height="277" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1606352374287" />
+    <state width="1493" height="277" key="GridCell.Tab.1.right" timestamp="1606352374287">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="277" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1606181734279" />
+    <state width="1493" height="277" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1606352374287" />
     <state x="249" y="7" key="SettingsEditor" timestamp="1606294554401">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
